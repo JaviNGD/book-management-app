@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/book_management_app
-    username: username
-    password: password
+    username: postgres
+    password: aceituno
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -34,3 +34,8 @@ application:
     jwt:
       secret-key: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxNjQwNzIxNiwiaWF0IjoxNzE2NDA3MjE2fQ.hJ3Ox9dx6IwMPIaN-yzvKIwvFIKyQuxCSj5u60M2sWc
       expiration: 86400000
+  mailing:
+    frontend:
+      activation-url: http://localhost:4200/activate-account
+server:
+  port: 8088
