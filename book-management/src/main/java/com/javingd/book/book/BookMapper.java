@@ -33,7 +33,7 @@ public class BookMapper {
                 .build();
     }
 
-    public Object toBorrowedBookResponse(BookTransactionHistory history) {
+    public BorrowedBookResponse toBorrowedBookResponse(BookTransactionHistory history) {
         return BorrowedBookResponse.builder()
                 .id(history.getBook().getId())
                 .title(history.getBook().getTitle())
