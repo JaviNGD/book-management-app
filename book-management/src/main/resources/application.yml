@@ -10,3 +10,8 @@ springdoc:
 server:
   servlet:
     context-path: /api/v1/
+
+application:
+  file:
+    uploads:
+      photos-output-path: C:/path/not/defined/yet
