@@ -68,7 +68,7 @@ public class AuthenticationService {
 
     private String generateAndSaveActivationToken(User user) {
         // Generate token
-        String generatedToken = generateActivationToken(20);
+        String generatedToken = generateActivationToken(6);
         var token = Token.builder()
                 .token(generatedToken)
                 .createdAt(LocalDateTime.now())

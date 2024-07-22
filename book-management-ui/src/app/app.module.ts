@@ -7,18 +7,24 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { LoginComponent } from './pages/login/login.component';
 import {FormsModule} from "@angular/forms";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { RegisterComponent } from './pages/register/register.component';
+import { ActivateAccountComponent } from './pages/activate-account/activate-account.component';
+import {CodeInputModule} from "angular-code-input";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    ActivateAccountComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        CodeInputModule
+    ],
   providers: [HttpClient, provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
